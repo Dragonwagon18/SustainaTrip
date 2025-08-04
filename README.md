@@ -1,36 +1,24 @@
-# 🌏 TravelSEA Advisor: RAG-Powered Sustainable Travel Recommendations for Southeast Asia
+# 🌏 SustainaTrip: RAG-Powered Sustainable Travel Recommendations for Southeast Asia
 
-This repository contains the code and resources for developing a Retrieval-Augmented Generation (RAG) system that provides trip plans and tourism recommendations for Southeast Asian countries. The focus is on promoting sustainable and ethical travel practices, leveraging data from WikiVoyage and sustainability-related content.
+RAG-Powered Sustainable Travel Recommendations for Southeast Asia
+
+This repository hosts the code and resources for building SustainaTrip, a Retrieval-Augmented Generation (RAG) system that provides personalized, sustainable travel recommendations across Southeast Asia. It leverages content from WikiVoyage and sustainability-focused resources to promote ethical and eco-friendly tourism.
+
 
 ![Interface Example](static/ui_example.png)
 
-## Table of Contents
 
-- [Problem Statement](#problem-statement)
-  - [Key Features](#key-features)
-  - [Related Work](#related-work)
-  - [Data Sources](#data-source)
-- [Evaluation Criteria Milestones](#evaluation-criteria-milestones) (hopefully a helper for project reviewers)
-  - [Problem Definition](#problem-definition)
-  - [RAG Flow](#rag-flow)
-  - [Retrieval Evaluation](#retrieval-evaluation)
-  - [RAG Evaluation](#rag-evaluation)
-  - [Interface](#interface)
-  - [Ingestion Pipeline](#ingestion-pipeline)
-  - [Monitoring](#monitoring)
-  - [Containerization](#containerization)
-  - [Reproducibility](#reproducibility)
-  - [Best Practices](#best-practices)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+## Project Overview
 
-## Problem Statement
+Mass tourism in Southeast Asia poses significant sustainability challenges, especially in regions lacking robust environmental regulations. This project introduces a RAG-based travel recommender system tailored to Southeast Asia, aiming to:
 
-In today’s travel industry, there is a growing demand for personalized and sustainable travel recommendations. This project introduces a RAG-based system that delivers contextually relevant, environmentally conscious travel suggestions specifically for Southeast Asian countries. While similar systems have been developed for major European cities, Southeast Asia, as one of the most popular holiday destinations globally, faces unique challenges.
+Offer context-aware and sustainable travel itineraries
 
-With fewer protective laws and regulations, these countries are more vulnerable to the harmful impacts of mass tourism compared to their European counterparts. As a result, this project focuses on this region, which is particularly susceptible to the effects of climate change and overtourism.
+Encourage responsible tourism through eco-conscious suggestions
+
+Demonstrate scalable architecture using open-source tools and APIs
+
+While many similar projects have targeted Western cities, this system highlights Southeast Asia’s distinct needs and vulnerabilities in the tourism sector.
 
 ### Key Features:
 - **Customized Trip Plans:** Generates personalized travel itineraries based on user preferences, such as budget, travel style, and duration.
