@@ -1,29 +1,60 @@
-# SustainaTrip 🌿✈️  
-*Empowering responsible tourism across Southeast Asia*
+# Sustainatrip 🌿✈️  
+*AI-Powered Sustainable Travel Recommendations for Southeast Asia*
 
-**SustainaTrip** is an AI-powered tool designed to promote sustainable travel and responsible tourism practices throughout Southeast Asia. By leveraging natural language processing (NLP) and machine learning, it analyzes government-issued tourism policy documents and sustainability guidelines from ASEAN countries to provide travelers with insights into eco-friendly practices, cultural sensitivity, and ethical travel behavior.
+Sustainatrip is an intelligent travel assistant designed to help users explore Southeast Asia responsibly. Leveraging cutting-edge AI, it recommends eco-friendly destinations, experiences, and accommodations, all through an intuitive chat-based interface.
 
-### 🌍 What does SustainaTrip do?
+## 🌍 What It Does
 
-- Extracts and summarizes sustainability-related themes from official tourism PDFs.
-- Identifies country-wise responsible travel guidelines.
-- Helps travelers make informed, ethical, and eco-conscious travel choices.
-- Encourages alignment with the UN Sustainable Development Goals (SDGs).
+Sustainatrip provides users with personalized and sustainable travel suggestions based on natural language queries. Ask it questions like:
 
-### 🛠️ Technologies Leveraged
+> *“What are eco-friendly things to do in Bali?”*
 
-- **Transformers (GPT-4)** for understanding and generating insights from large text corpora.
-- **Python** for scripting and automation of document processing.
-- **PDF parsers** to extract clean, structured content from government documents.
-- **Machine learning** to recognize recurring sustainability themes.
-- **Data visualization** (optional) for presenting summaries in a user-friendly format.
+And receive curated answers that emphasize:
 
-### 🌏 Coverage
+- Green accommodations  
+- Ethical and cultural experiences  
+- Low-impact transport  
+- Community-based tourism options  
 
-SustainaTrip analyzes travel and sustainability documents from:
-Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, and Vietnam.
+## 🧠 Core Features
+
+- **Document-Based Knowledge**: Uses WikiVoyage and other travel documents as the knowledge base.
+- **Hybrid Retrieval-Augmented Generation (RAG)**: Combines text search with vector similarity to find the most relevant content before generating a response.
+- **Sustainability-Driven Prompts**: Special care is taken to ensure responses promote responsible tourism.
+- **Interactive UI**: Built with Streamlit for easy use and real-time feedback collection.
+
+## ⚙️ Technologies Used
+
+- **PDF to Markdown Conversion**: Via `marker` for processing travel guides  
+- **Document Chunking & Metadata Tagging**: Uses recursive text splitters to preserve context  
+- **Vector Database**: Built on `PostgreSQL` with `PGVector` for hybrid search  
+- **Embeddings**: HuggingFace model `BAAI/bge-large-en-v1.5` for semantic understanding  
+- **LLM Integration**: OpenAI’s GPT models for generating thoughtful, contextual answers  
+- **Frontend**: Streamlit app for clean UX and live feedback  
+- **Evaluation Tools**: Ground-truth generation and retrieval performance measurement (MRR, Hit Rate)
+
+## 🔁 Typical Workflow
+
+1. **Initialization**:
+   - Processes PDF documents into searchable chunks
+   - Embeds content into vector DB using HuggingFace models
+
+2. **User Query**:
+   - Retrieves relevant travel information from indexed documents
+   - Uses GPT model to generate an eco-conscious response
+
+3. **Evaluation**:
+   - Runs experiments on different RAG configurations
+   - Compares embedding models and retrieval strategies
+
+## 🚀 Future Plans
+
+- Expand beyond WikiVoyage content  
+- Add user profiles for personalized recommendations  
+- Include real-time data (e.g., flight emissions, availability)  
+- Support multi-language queries  
+- Improve sustainability feedback loop
 
 ---
 
-> Travel better. Travel responsibly.  
-> **SustainaTrip – Your Ethical Travel Assistant**  
+Sustainatrip is a step toward smarter, more conscious tourism – powered by AI, grounded in sustainability.
