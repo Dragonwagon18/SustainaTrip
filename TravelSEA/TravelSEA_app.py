@@ -241,8 +241,6 @@ def main():
     
     The application uses RAG (Retrieval Augmented Generation) to ensure responses are grounded in 
     factual information about the region.
-    
-    For more information about the project, visit our [GitHub repository](https://github.com/M4riaLoureiro/ethical-travel-recommender).
     """
     )
 
